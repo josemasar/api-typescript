@@ -1,3 +1,5 @@
-import clubs from "../data/clubs.json"
+import createServer from "./server";
 
-console.log(clubs)
+createServer().listen(3000, ()=>{
+    console.log("Ya estamos escuchando")
+})
